@@ -52,7 +52,7 @@ def license_number_validation(license_number: str) -> str:
             "First three symbols of license number must be uppercase letters."
         )
 
-    if not license_number[4:].isdigit():
+    if not license_number[3:].isdigit():
         raise ValidationError(
             "Last five symbols of license number must be digits."
         )
